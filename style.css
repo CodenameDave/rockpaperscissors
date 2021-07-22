@@ -1,0 +1,51 @@
+body {
+  background-image: linear-gradient(hsl(210, 92%, 15%), hsl(210, 92%, 85%));
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 4.5rem;
+  font-family: 'Nova Round', cursive;
+  color: hsl(240, 24%, 93%);
+}
+
+.handimage {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-radius: 180px;
+  border-width: 4px;
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  background-image: linear-gradient(
+    hsl(240, 92%, 49%),
+    hsl(240, 82%, 30%),
+    hsl(240, 82%, 15%)
+  );
+  /* transition: 0.25s; */
+}
+
+.handimage:hover {
+  border-color: whitesmoke;
+  background-image: linear-gradient(
+    hsl(240, 82%, 35%),
+    hsl(240, 82%, 50%),
+    hsl(240, 82%, 69%)
+  );
+}
+
+.selection-container {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 30rem;
+}
