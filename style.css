@@ -6,16 +6,38 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+#title {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   font-size: 4.5rem;
-  font-family: 'Nova Round', cursive;
+  font-family: "Nova Round", cursive;
   color: hsl(240, 24%, 93%);
+  text-decoration: underline;
 }
 
-.handimage {
+.player-container {
+  display: flex;
+
+  margin-top: 3rem;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Nova Round", cursive;
+  color: hsl(240, 24%, 93%);
+  text-decoration: underline;
+}
+.human {
+  width: 50%;
+  margin-left: 15rem;
+}
+.computer {
+  width: 50%;
+  text-align: right;
+  margin-right: 15rem;
+}
+
+.handimage,
+.restart-wrapper {
   display: flex;
   width: 150px;
   height: 150px;
@@ -34,7 +56,8 @@ h1 {
   /* transition: 0.25s; */
 }
 
-.handimage:hover {
+.handimage:hover,
+.restart-wrapper:hover {
   border-color: whitesmoke;
   background-image: linear-gradient(
     hsl(240, 82%, 35%),
@@ -45,7 +68,18 @@ h1 {
 
 .selection-container {
   display: flex;
-
   justify-content: center;
-  margin-top: 30rem;
+  margin-top: 20rem;
+}
+
+.restart-wrapper {
+  width: 90px;
+  height: 90px;
+}
+
+.restart-container {
+  display: flex;
+  margin-top: -9rem;
+  float: right;
+  margin-right: 3rem;
 }
