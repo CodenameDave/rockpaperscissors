@@ -10,3 +10,5 @@ Starting scope:
 2nd Scope
 -two player mode (maybe an option to choose)
 -hide selction from other player
+
+My daughter helped me with the design!!!

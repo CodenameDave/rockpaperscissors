@@ -28,12 +28,36 @@ body {
 }
 .human {
   width: 50%;
-  margin-left: 15rem;
+  margin-left: 25%;
 }
 .computer {
   width: 50%;
   text-align: right;
-  margin-right: 15rem;
+  margin-right: 25%;
+}
+
+.question {
+  display: flex;
+}
+.human-question,
+.computer-question {
+  width: 50%;
+  background-image: url(humanflames.png);
+
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 5rem;
+}
+.computer-question {
+  background-color: hsl(348, 76%, 32%);
+  background-image: url(computerflames.png);
+}
+.computer-question img {
+  display: flex;
+}
+.human-question img {
+  margin-left: 58.25%;
 }
 
 .handimage,
