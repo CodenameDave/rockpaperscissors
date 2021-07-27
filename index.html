@@ -14,18 +14,34 @@
   </head>
   <body>
     <h1 id="title">Rock Paper Scissors</h1>
-
+    <div class="best-of"><img src="bestof.png" /></div>
     <div class="player-container">
       <div class="human"><h2>Human</h2></div>
       <div class="computer"><h2>Computer</h2></div>
     </div>
 
+    <div class="modal-result hidden">
+      <button class="closeModal">X</button>
+      <h2>words</h2>
+    </div>
+
     <div class="question">
       <div class="human-question">
-        <img src="question.png" alt="question mark" />
+        <img
+          class="human-question-mark"
+          src="question.png"
+          alt="question mark"
+        />
+        <img class="human-select" src="rps-1.png" alt="Rock" />
       </div>
+
       <div class="computer-question">
-        <img src="question.png" alt="question mark" />
+        <img
+          class="computer-question-mark"
+          src="question.png"
+          alt="question mark"
+        />
+        <img class="computer-select" src="rps-1.png" alt="Rock" />
       </div>
     </div>
 
@@ -67,6 +83,27 @@
         />
       </div>
     </div>
-    <script src="test.js"></script>
+
+    <div class="best-of-select-container">
+      <p>Game Setup:</p></br>
+      <div class="radio-labels">
+        <input type="radio" class="rounds"id="three" name="best-of-selection" value="3" checked />
+        <label for="three">Best of 3</label>
+        <input type="radio" class='rounds'id="five" name="best-of-selection" value="5" />
+        <label for="five">Best of 5</label>
+        <input type="radio" class = 'rounds'id="seven" name="best-of-selection" value="7" />
+        <label for="seven">Best of 7</label>
+      </div>
+      <p>Opponent</p>
+      <div class="opponent">
+        <input type="radio" class="opp" id="computer" name="opponent" value='computer'checked />
+        <label for="computer">Computer</label>
+        <input type="radio" class="opp" id="human" name="opponent" value='human' />
+        <label for="human">Human</label>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
